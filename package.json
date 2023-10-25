@@ -4,7 +4,8 @@
   "description": "An experiment to see if we can combine Plain Text Accounting with TigerBeetle",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsx ./index.ts ./sample.journal ./dictionary.json"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,10 @@
   },
   "homepage": "https://github.com/pondersource/pta-tb-experiment#readme",
   "dependencies": {
-    "pta-tools": "^1.5.2",
-    "tigerbeetle-node": "^0.11.0"
+    "pta-tools": "^1.6.0",
+    "tigerbeetle-node": "^0.14.153"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.8"
   }
 }
